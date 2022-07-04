@@ -21,6 +21,24 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
   <title>Serverless Webapp on AWS</title>
+  <script>
+    (function(n,i,v,r,s,c,x,z){x=window.AwsRumClient={q:[],n:n,i:i,v:v,r:r,c:c};window[n]=function(c,p){x.q.push({c:c,p:p});};z=document.createElement('script');z.async=true;z.src=s;document.head.insertBefore(z,document.head.getElementsByTagName('script')[0]);})(
+      'cwr',
+      '97757c51-32d5-42b8-b56b-1af0e5e88941',
+      '1.0.0',
+      'us-west-2',
+      'https://client.rum.us-east-1.amazonaws.com/1.5.x/cwr.js',
+      {
+        sessionSampleRate: 1,
+        guestRoleArn: "arn:aws:iam::845368224021:role/RUM-Monitor-us-west-2-845368224021-3928907596561-Unauth",
+        identityPoolId: "us-west-2:065fb16e-2010-40ad-9c3c-c48f626380fa",
+        endpoint: "https://dataplane.rum.us-west-2.amazonaws.com",
+        telemetries: ["performance","errors",[ "http", { addXRayTraceIdHeader: true } ]],
+        allowCookies: true,
+        enableXRay: true
+      }
+    );
+  </script>
 </head>
 
 <body>
